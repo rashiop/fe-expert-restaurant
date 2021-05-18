@@ -1,0 +1,47 @@
+@mixin offset-margin($position, $value){
+  @if $position {
+    margin-#{$position}: $value;
+  } 
+  @else if $position == 'y' {
+    margin-bottom: $value;
+    margin-top: $value;
+  }
+  @else if $position == 'x' {
+    margin-left: $value;
+    margin-right: $value;
+  }
+  @else if $position == 'all' {
+    margin: $value;
+  }
+}
+
+@mixin offset-padding($position, $value){
+  @if $position {
+    padding-#{$position}: $value;
+  } 
+  @else if $position == 'y' {
+    padding-bottom: $value;
+    padding-top: $value;
+  }
+  @else if $position == 'x' {
+    padding-left: $value;
+    padding-right: $value;
+  }
+  @else if $position == 'all' {
+    padding: $value;
+  }
+}
+
+@for $i from 1 through 2 {
+  @each $position in t, l, b, r, x, y, '' {
+    .m#{$position}-#{$i}{
+      @include offset-margin($position, $i) 
+    }
+
+    .p#{$position}-#{$i}{
+      @include offset-padding($position, $i) 
+    }
+  }
+}
+
+
