@@ -1,16 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Restaurant Apps Starter Project</title>
+    <title>Hunger Apps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Hunger Apps, is an easiest way to find your favorite restaurants around you. It updates the restaurant list based on your location, cuisines in your profile ..." />
+    <meta property="og:title" content="Hunger Apps" />
+    <meta property="og:description"
+        content="Hunger Apps, is an easiest way to find your favorite restaurants around you. It updates the restaurant list based on your location, cuisines in your profile ..." />
+    <meta property="og:url" content="https://hunger-apps.dummy.com" />
+    <meta property="og:image" content="./images/design/favicon-32x32.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Hunger Apps" />
+    <meta name="twitter:image:alt" content="Hunger Apps" />
+
+    <meta name="theme-color" content="#726a95" />
+    <link rel="apple-touch-icon" href="./images/design/apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="icon" href="./images/design/favicon-16x16.png" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-<h1>Restaurant Apps Starter Project</h1>
-<p>Hallo coders! Anda berhasil menjalankan starter project.</p>
-<p>Jangan lupa untuk menggunakan salah satu gambar yang berada pada ./images/heros sebagai background hero elemen</p>
-<img src="./images/heros/hero-image_1.jpg" width="450" alt="">
-<img src="./images/heros/hero-image_2.jpg" width="450" alt="">
-<img src="./images/heros/hero-image_3.jpg" width="450" alt="">
-<img src="./images/heros/hero-image_4.jpg" width="450" alt="">
+    <a href="#content" class="skip-link">Skip to content</a>
+    <header class="header">
+        <div class="header__inner">
+            <img class="header__logo" src="./images/design/favicon-32x32.png" alt="search restaurant you need" />
+            <h1>
+                Hunger Apps
+            </h1>
+            <a href="#" class="header__menu" id="menu">☰</a>
+        </div>
+    </header>
+    <nav class="nav" id="drawer">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="/">Home</a>
+            </li>
+            <li class="nav__item">
+                <a href="#">Favorite</a>
+            </li>
+            <li class="nav__item">
+                <a href="https://github.com/rashiop" target="_blank">About us</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="hero">
+    </div>
+    <main>
+        <section class="content">
+            <h1 class="">Explore Restaurant</h1>
+            <!-- START: restaurants -->
+            <div class="restaurants">
+                <!-- START: restaurant item 1 -->
+                <article class="restaurant-item">
+                    <img class="restaurant-item__thumbnail" src="./images/content/restaurant-3-wise-monkey.jpeg" alt="All you can eat sushi in Senopaty" />
+                    <div class="restaurant-item__content">
+                        <p class="restaurant-item__rating">
+                            Rating: 4.5
+                        </p>
+                        <h1 class="restaurant-item__name">
+                            Three wise monkey
+                        </h1>
+                        <p class="restaurant-item__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aspernatur atque autem culpa laborum odio similique voluptas. A ab animi ducimus earum
+                            explicabo hic molestias repudiandae sunt. Consectetur consequuntur dolorum excepturi, fugit,
+                            minus nemo non quae quaerat quod recusandae reprehenderit totam, unde. Aliquid autem
+                            doloremque impedit quod tempora tenetur totam vero.
+                        </p>
+                    </div>
+                </article>
+                <!-- END: restaurant item 1 -->
+                <!-- START: restaurant item 2 -->
+                <article class="restaurant-item">
+                    <img class="restaurant-item__thumbnail" src="./images/content/restaurant-holycow.jpeg" alt="Meat eatery" />
+                    <div class="restaurant-item__content">
+                        <p class="restaurant-item__rating">
+                            Rating: 4.5
+                        </p>
+                        <h1 class="restaurant-item__name">
+                            Holycow
+                        </h1>
+                        <p class="restaurant-item__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aspernatur atque autem culpa laborum odio similique voluptas. A ab animi ducimus earum
+                            explicabo hic molestias repudiandae sunt. Consectetur consequuntur dolorum excepturi, fugit,
+                            minus nemo non quae quaerat quod recusandae reprehenderit totam, unde. Aliquid autem
+                            doloremque impedit quod tempora tenetur totam vero.
+                        </p>
+                    </div>
+                </article>
+                <!-- END: restaurant item 2 -->
+                <!-- START: restaurant item 3 -->
+                <article class="restaurant-item">
+                    <img class="restaurant-item__thumbnail" src="./images/content/restaurant-kappa-sushi.jpeg" alt="All you can eat sushi in Jakarta Barat" />
+                    <div class="restaurant-item__content">
+                        <p class="restaurant-item__rating">
+                            Rating: 4.5
+                        </p>
+                        <h1 class="restaurant-item__name">
+                            Kappa Sushi
+                        </h1>
+                        <p class="restaurant-item__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aspernatur atque autem culpa laborum odio similique voluptas. A ab animi ducimus earum
+                            explicabo hic molestias repudiandae sunt. Consectetur consequuntur dolorum excepturi, fugit,
+                            minus nemo non quae quaerat quod recusandae reprehenderit totam, unde. Aliquid autem
+                            doloremque impedit quod tempora tenetur totam vero.
+                        </p>
+                    </div>
+                </article>
+                <!-- END: restaurant item 3 -->
+                <!-- START: restaurant item 4 -->
+                <article class="restaurant-item">
+                    <img class="restaurant-item__thumbnail" src="./images/content/restaurant-shaburi.jpeg" alt="All you can eat shabu located in big cities" />
+                    <div class="restaurant-item__content">
+                        <p class="restaurant-item__rating">
+                            Rating: 4.5
+                        </p>
+                        <h1 class="restaurant-item__name">
+                            Shaburi
+                        </h1>
+                        <p class="restaurant-item__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aspernatur atque autem culpa laborum odio similique voluptas. A ab animi ducimus earum
+                            explicabo hic molestias repudiandae sunt. Consectetur consequuntur dolorum excepturi, fugit,
+                            minus nemo non quae quaerat quod recusandae reprehenderit totam, unde. Aliquid autem
+                            doloremque impedit quod tempora tenetur totam vero.
+                        </p>
+                    </div>
+                </article>
+                <!-- END: restaurant item 4 -->
+                <!-- START: restaurant item 6 -->
+                <article class="restaurant-item">
+                    <img class="restaurant-item__thumbnail" src="./images/content/restaurant-take-a-bite.jpg" alt="" />
+                    <div class="restaurant-item__content">
+                        <p class="restaurant-item__rating">
+                            Rating: 4.5
+                        </p>
+                        <h1 class="restaurant-item__name">
+                            Take a bite
+                        </h1>
+                        <p class="restaurant-item__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aspernatur atque autem culpa laborum odio similique voluptas. A ab animi ducimus earum
+                            explicabo hic molestias repudiandae sunt. Consectetur consequuntur dolorum excepturi, fugit,
+                            minus nemo non quae quaerat quod recusandae reprehenderit totam, unde. Aliquid autem
+                            doloremque impedit quod tempora tenetur totam vero.
+                        </p>
+                    </div>
+                </article>
+                <!-- END: restaurant item 6 -->
+            </div>
+            <!-- END: restaurants -->
+        </section>
+    </main>
+    <!-- <img src="./images/heros/hero-image_1.jpg" width="450" alt="">
+    <img src="./images/heros/hero-image_2.jpg" width="450" alt="">
+    <img src="./images/heros/hero-image_3.jpg" width="450" alt="">
+    <img src="./images/heros/hero-image_4.jpg" width="450" alt=""> -->
+    <footer class="footer">
+        copyright by Poppy
+    </footer>
 </body>
+
 </html>
