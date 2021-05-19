@@ -40,7 +40,7 @@
     }
   }
 
-  .restaurants {
+  restaurant-list {
     grid-template-columns: repeat(2, 1fr);
     &__rating {
       font-size: 16px;
@@ -57,7 +57,7 @@
 }
 
 @media(min-width: 768px) {
-  .restaurants {
+  restaurant-list {
     grid-template-columns: repeat(3, 1fr);
     &__name {
       font-size: 26px;

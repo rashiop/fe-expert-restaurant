@@ -5,6 +5,8 @@ import '../styles/main.scss';
 import '../styles/responsive.scss';
 import 'regenerator-runtime';
 
+import init from './init';
+
 const menu = document.querySelector('#menu');
 const hero = document.querySelector('.hero');
 const main = document.querySelector('main');
@@ -23,3 +25,4 @@ main.addEventListener('click', function () {
   drawer.classList.remove('open');
 });
 
+init()
