@@ -3,18 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Hunger Apps</title>
+    <title>Hungry Map</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Hunger Apps, is an easiest way to find your favorite restaurants around you. It updates the restaurant list based on your location, cuisines in your profile ..." />
-    <meta property="og:title" content="Hunger Apps" />
+        content="Hungry Map, is an easiest way to find your favorite restaurants around you. It updates the restaurant list based on your location, cuisines in your profile ..." />
+    <meta property="og:title" content="Hungry Map" />
     <meta property="og:description"
-        content="Hunger Apps, is an easiest way to find your favorite restaurants around you. It updates the restaurant list based on your location, cuisines in your profile ..." />
+        content="Hungry Map, is an easiest way to find your favorite restaurants around you. It updates the restaurant list based on your location, cuisines in your profile ..." />
     <meta property="og:url" content="https://hunger-apps.dummy.com" />
     <meta property="og:image" content="./images/design/favicon-32x32.png" />
     <meta property="og:type" content="article" />
-    <meta property="og:site_name" content="Hunger Apps" />
-    <meta name="twitter:image:alt" content="Hunger Apps" />
+    <meta property="og:site_name" content="Hungry Map" />
+    <meta name="twitter:image:alt" content="Hungry Map" />
 
     <meta name="theme-color" content="#726a95" />
     <link rel="apple-touch-icon" href="./images/design/apple-touch-icon.png" />
@@ -28,11 +28,11 @@
 
 <body>
     <a href="#content" class="skip-link">Skip to content</a>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__inner">
             <img class="header__logo" src="./images/design/favicon-32x32.png" alt="search restaurant you need" />
             <h1>
-                Hunger Apps
+                Hungry Map
             </h1>
             <a href="#" class="header__menu" id="menu">☰</a>
         </div>
@@ -51,21 +51,25 @@
         </ul>
     </nav>
     <div class="hero">
+        <div class="hero__image"></div>
+        <div class="hero__inner">
+            <h1>The easiest way to find your favorite restaurants around you. It updates the restaurant list based on your location, cuisines in your profile ...</h1>
+            <button class="hero__button">Learn more</button>
+        </div>
     </div>
     <main>
-        <section class="content">
-            <h1 class="">Explore Restaurant</h1>
+        <section class="content" id="content">
+            <h1 class="content__title">Explore Restaurant</h1>
             <!-- START: restaurants -->
             <restaurant-list></restaurant-list>
             <!-- END: restaurants -->
         </section>
     </main>
-    <!-- <img src="./images/heros/hero-image_1.jpg" width="450" alt="">
-    <img src="./images/heros/hero-image_2.jpg" width="450" alt="">
-    <img src="./images/heros/hero-image_3.jpg" width="450" alt="">
-    <img src="./images/heros/hero-image_4.jpg" width="450" alt=""> -->
+    <a href="#header">
+        <img src="./images/design/back-to-top.png" alt="back to top" id="back-to-top" />
+    </a>
     <footer class="footer">
-        Copyright © 2021 - Hunger Apps
+        Copyright © 2021 - Hungry Map
     </footer>
 </body>
 

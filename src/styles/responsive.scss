@@ -3,7 +3,6 @@
     z-index: 10;
     position: absolute;
     width: 100%;
-    
     max-height: 0;
     opacity: 0.01;
     transition: opacity 1s, max-height 0s 1s;
@@ -20,11 +19,20 @@
         justify-content: space-between;
     }
   }
+
 }
 
 @media (min-width: 600px) {
-  .header__menu {
-    display: none;
+  .header {
+    &__menu {
+      display: none;
+    }
+    &__inner {
+      padding: 1rem 20px;
+    }
+    &__logo {
+      margin-right: 1rem;
+    }
   }
 
   .nav {
@@ -35,7 +43,7 @@
     }
     &__item {
       & > a {
-        font-size: 16px;
+        font-size: var(--text-sm-md, 16px);
       }
     }
   }
@@ -43,16 +51,23 @@
   restaurant-list {
     grid-template-columns: repeat(2, 1fr);
     &__rating {
-      font-size: 16px;
+      font-size: var(--text-sm-md, 16px);
     }
     &__name {
-      font-size: 24px;
+      font-size: var(--text-lg-md, 24px);
     }
     &__description {
-      font-size: 16px;
-    }
-    
+      font-size: var(--text-sm-md, 16px);
+    } 
   }
+
+  .hero {
+    &__inner {
+      padding: 20px;
+      font-size: var(--text-sm-md);
+    }
+  }
+
   
 }
 
@@ -60,7 +75,14 @@
   restaurant-list {
     grid-template-columns: repeat(3, 1fr);
     &__name {
-      font-size: 26px;
+      font-size: var(--text-lg-lg, 26px);
+    }
+  }
+
+  .hero {
+    &__inner {
+      max-width: 600px;
+      font-size: var(--text-md-lg);
     }
   }
 }
@@ -69,8 +91,8 @@
   .nav {
     &__list {
       flex-direction: row;
-      justify-content: space-around;
-      padding: 10px;
+      justify-content: space-between;
+      padding: 10px 20px;
     }
     &__item {
       & > a {
@@ -81,6 +103,13 @@
   .content {
     max-width: 1000px;
     margin: 0 auto;
+  }
+
+  .hero {
+    &__inner {
+      max-width: 750px;
+      font-size: var(--text-md-lg);
+    }
   }
 
 }

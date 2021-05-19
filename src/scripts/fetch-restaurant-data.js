@@ -2,7 +2,7 @@ import './component/restaurant-list';
 
 import DataSource from './data/restaurant-data';
 
-const init = async () => {
+const getAllRestaurant = async () => {
   const restaurantElement = document.querySelector('restaurant-list');
 
   const fallbackResult = (message) => {
@@ -12,7 +12,11 @@ const init = async () => {
   const renderResult = (results) => {
     restaurantElement.restaurants = results;
   };
+  const renderLoading = () => {
+    restaurantElement.renderLoading();
+  };
 
+  renderLoading();
   try {
     const restaurants = await DataSource.getAll();
     renderResult(restaurants);
@@ -21,4 +25,4 @@ const init = async () => {
   }
 };
 
-export default init;
+export default getAllRestaurant;

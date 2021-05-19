@@ -1,0 +1,49 @@
+:root {
+  /* font-family */
+  --font-family: 'Lato', sans-serif;
+
+  /* font-size */
+  --text-sm-sm: 14px;
+  --text-md-sm: 16px;
+  --text-lg-sm: 20px;
+  
+  --text-sm-md: 16px;
+  --text-md-md: 18px;
+  --text-lg-md: 24px;
+  
+  --text-sm-lg: 16px;
+  --text-md-lg: 20px;
+  --text-lg-lg: 26px;
+
+
+  /* font-weight */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-semibold: 500;
+  --font-bold: 700;
+
+  /* shadow */
+  --box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(190, 109, 109, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+  /* color */
+  --red-munsel: #ec0b43;
+  --white: #fffdfd;
+  --rich-black-fogra: #0C0C0C;
+  --light-gray: #CBD2D0;
+  --titanium-yellow: #F0E100;
+  --light-golden-yellow: #ffffe0;
+
+  --primary-color: var(--red-munsel);
+
+  --title-color: var(--primary-color);
+  --menu-color: var(--primary-color);
+  --font-color: var(--rich-black-fogra);
+
+  --footer-color: var(--white);  
+  --skip-link-color: var(--white);
+}

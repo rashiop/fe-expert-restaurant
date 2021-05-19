@@ -1,3 +1,5 @@
+@import url('./base/theme.scss');
+
 html, body {
     padding: 0;
     margin: 0;
@@ -6,7 +8,8 @@ html, body {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-family);
+    color: var(--font-color);
 }
 
 * {
@@ -20,20 +23,22 @@ img {
 }
 
 .header {
+    background-color: var(--primary-color);
+    height: 80px;
     &__inner {
         width: 100%;
         display: inline-flex;
-        padding: 1rem;
+        padding: 1rem 0.5rem;
     }
 
     &__logo {
         width: 32px;
         height: 32px;
-        margin-right: 14px;
     }
 
     &__menu {
         font-size: 32px;
+        color: var(--font-color);
         text-decoration: none;
     }
 }
@@ -42,8 +47,9 @@ img {
     &__list {
       display: flex;
       flex-direction: column;
-      background-color: #fcf6ed;
+      background-color: white;
       list-style-type: none;
+      text-transform: uppercase;
     }
 
     &__item {
@@ -51,7 +57,8 @@ img {
       text-align: center;
       
       & > a {
-        font-weight: 700;
+        color: var(--primary-color);
+        font-weight: var(--font-bold);
         font-size: 14px;
         text-decoration: none;
       }
@@ -59,18 +66,22 @@ img {
   }
 
 .footer {
+  width: 100%;
+  margin-top: 3em;
   padding: 1em;
-  font-weight: 700;
+  font-weight: var(--font-bold);
   text-align: center;
+  background-color: var(--primary-color);
+  color: var(--white);
 }
 
 .skip-link {
    position: absolute;
-   top: -40px;
+   top: -60px;
    left: 0;
-   background-color: #bf1722;
-   color: white;
-   padding: 8px;
+   background-color: var(--titanium-yellow);
+   color: var(--rich-black-fogra);
+   padding: 20px;
    z-index: 100;
 
    &:focus {
@@ -78,3 +89,15 @@ img {
    }
 }
  
+
+#back-to-top {
+  position: sticky;
+  bottom: 5px;
+  left: calc(100vw - 60px);
+  background-color: var(--white);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  box-shadow: var(--box-shadow);
+}
+
