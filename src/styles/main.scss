@@ -53,10 +53,13 @@ img {
     }
 
     &__item {
-      padding: 10px;
       text-align: center;
       
       & > a {
+        display: inline-block;
+        padding: 12px;
+        min-width: 44px;
+        min-height: 44px;
         color: var(--primary-color);
         font-weight: var(--font-bold);
         font-size: 14px;

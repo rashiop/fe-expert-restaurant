@@ -8,7 +8,7 @@ class RestaurantItem extends HTMLElement {
     const { id, name, description, city, pictureId, rating } = this._restaurant;
     this.innerHTML = `
       <style>
-        #${id}:before {
+        .restaurant-item#item-${id}:before {
           content: '${city}';
           background-color: #f0e100;
           position: absolute;
@@ -20,8 +20,8 @@ class RestaurantItem extends HTMLElement {
       </style>
 
       <!-- START: restaurant item -->
-      <article class="restaurant-item" id="${id}">
-        <img class="restaurant-item__thumbnail" src="${pictureId}" alt="" />
+      <article class="restaurant-item" id="item-${id}">
+        <img class="restaurant-item__thumbnail" src="${pictureId}" alt=${name} />
         <div class="restaurant-item__content">
           <p class="restaurant-item__rating">Rating: ${rating}</p>
             <h1 class="restaurant-item__name">${name}</h1>
