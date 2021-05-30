@@ -32,14 +32,19 @@ img {
     }
 
     &__logo {
-        width: 32px;
-        height: 32px;
+        width: 44px;
+        height: 44px;
     }
 
     &__menu {
-        font-size: 32px;
+        width: 44px;
+        font-size: 44px;
         color: var(--font-color);
         text-decoration: none;
+    }
+
+    h1 {
+      font-size: 44px;
     }
 }
 
