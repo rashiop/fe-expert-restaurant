@@ -22,57 +22,6 @@ img {
     display: block;
 }
 
-.header {
-    background-color: var(--primary-color);
-    height: 80px;
-    &__inner {
-        width: 100%;
-        display: inline-flex;
-        padding: 1rem 0.5rem;
-    }
-
-    &__logo {
-        width: 44px;
-        height: 44px;
-    }
-
-    &__menu {
-        width: 44px;
-        font-size: 44px;
-        color: var(--font-color);
-        text-decoration: none;
-    }
-
-    h1 {
-      font-size: 44px;
-    }
-}
-
-.nav {
-    &__list {
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-      list-style-type: none;
-      text-transform: uppercase;
-    }
-
-    &__item {
-      text-align: center;
-      
-      & > a {
-        display: inline-block;
-        padding: 12px;
-        min-width: 44px;
-        min-height: 44px;
-        color: var(--primary-color);
-        font-weight: var(--font-bold);
-        font-size: 14px;
-        text-decoration: none;
-      }
-    }
-  }
-
 .footer {
   width: 100%;
   margin-top: 3em;

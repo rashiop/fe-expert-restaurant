@@ -1,3 +1,4 @@
+import '../styles/header.scss';
 import '../styles/landing.scss';
 import '../styles/main.scss';
 import '../styles/responsive.scss';
@@ -8,7 +9,7 @@ import getAllRestaurant from './fetch-restaurant-data';
 import setDrawer from './set-drawer';
 
 
-(function() {
+( function () {
   setDrawer()
   getAllRestaurant();
-})()
+} )()
